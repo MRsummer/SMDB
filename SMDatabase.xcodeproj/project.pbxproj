@@ -15,6 +15,10 @@
 		3AC9BD051D68083700A04136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9BD031D68083700A04136 /* LaunchScreen.storyboard */; };
 		3AC9BD101D68083700A04136 /* SMDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9BD0F1D68083700A04136 /* SMDatabaseTests.m */; };
 		3AC9BD1B1D68083700A04136 /* SMDatabaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9BD1A1D68083700A04136 /* SMDatabaseUITests.m */; };
+		3AC9BD331D68089700A04136 /* SMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9BD2B1D68089700A04136 /* SMDatabase.m */; };
+		3AC9BD341D68089700A04136 /* SMDatabase+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9BD2D1D68089700A04136 /* SMDatabase+Model.m */; };
+		3AC9BD351D68089700A04136 /* SMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9BD311D68089700A04136 /* SMModel.m */; };
+		AA1977A5A1D44205091D3A83 /* libPods-SMDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9694B977A04A5DF4C412AD /* libPods-SMDatabase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,18 @@
 		3AC9BD161D68083700A04136 /* SMDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC9BD1A1D68083700A04136 /* SMDatabaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDatabaseUITests.m; sourceTree = "<group>"; };
 		3AC9BD1C1D68083700A04136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC9BD2A1D68089700A04136 /* SMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDatabase.h; sourceTree = "<group>"; };
+		3AC9BD2B1D68089700A04136 /* SMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDatabase.m; sourceTree = "<group>"; };
+		3AC9BD2C1D68089700A04136 /* SMDatabase+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMDatabase+Model.h"; sourceTree = "<group>"; };
+		3AC9BD2D1D68089700A04136 /* SMDatabase+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMDatabase+Model.m"; sourceTree = "<group>"; };
+		3AC9BD2E1D68089700A04136 /* SMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDB.h; sourceTree = "<group>"; };
+		3AC9BD2F1D68089700A04136 /* SMDBMigrateProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDBMigrateProtocal.h; sourceTree = "<group>"; };
+		3AC9BD301D68089700A04136 /* SMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMModel.h; sourceTree = "<group>"; };
+		3AC9BD311D68089700A04136 /* SMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMModel.m; sourceTree = "<group>"; };
+		3AC9BD321D68089700A04136 /* SMModelProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMModelProtocal.h; sourceTree = "<group>"; };
+		A975A8978061E233A643034F /* Pods-SMDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMDatabase/Pods-SMDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		BB9694B977A04A5DF4C412AD /* libPods-SMDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SMDatabase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE64EC8C4568672BD2AAC4F /* Pods-SMDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMDatabase/Pods-SMDatabase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1977A5A1D44205091D3A83 /* libPods-SMDatabase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				3AC9BD0E1D68083700A04136 /* SMDatabaseTests */,
 				3AC9BD191D68083700A04136 /* SMDatabaseUITests */,
 				3AC9BCF31D68083700A04136 /* Products */,
+				9B431B38B892A9176D7584CB /* Pods */,
+				D3336FC32CA77D0DA0BDDE25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +120,11 @@
 		3AC9BCF41D68083700A04136 /* SMDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				3AC9BD291D68086300A04136 /* Classes */,
 				3AC9BCF81D68083700A04136 /* AppDelegate.h */,
 				3AC9BCF91D68083700A04136 /* AppDelegate.m */,
 				3AC9BCFB1D68083700A04136 /* ViewController.h */,
 				3AC9BCFC1D68083700A04136 /* ViewController.m */,
-				3AC9BCFE1D68083700A04136 /* Main.storyboard */,
-				3AC9BD011D68083700A04136 /* Assets.xcassets */,
-				3AC9BD031D68083700A04136 /* LaunchScreen.storyboard */,
-				3AC9BD061D68083700A04136 /* Info.plist */,
 				3AC9BCF51D68083700A04136 /* Supporting Files */,
 			);
 			path = SMDatabase;
@@ -117,6 +133,10 @@
 		3AC9BCF51D68083700A04136 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AC9BCFE1D68083700A04136 /* Main.storyboard */,
+				3AC9BD011D68083700A04136 /* Assets.xcassets */,
+				3AC9BD031D68083700A04136 /* LaunchScreen.storyboard */,
+				3AC9BD061D68083700A04136 /* Info.plist */,
 				3AC9BCF61D68083700A04136 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +160,39 @@
 			path = SMDatabaseUITests;
 			sourceTree = "<group>";
 		};
+		3AC9BD291D68086300A04136 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9BD2A1D68089700A04136 /* SMDatabase.h */,
+				3AC9BD2B1D68089700A04136 /* SMDatabase.m */,
+				3AC9BD2C1D68089700A04136 /* SMDatabase+Model.h */,
+				3AC9BD2D1D68089700A04136 /* SMDatabase+Model.m */,
+				3AC9BD2E1D68089700A04136 /* SMDB.h */,
+				3AC9BD2F1D68089700A04136 /* SMDBMigrateProtocal.h */,
+				3AC9BD301D68089700A04136 /* SMModel.h */,
+				3AC9BD311D68089700A04136 /* SMModel.m */,
+				3AC9BD321D68089700A04136 /* SMModelProtocal.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9B431B38B892A9176D7584CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A975A8978061E233A643034F /* Pods-SMDatabase.debug.xcconfig */,
+				CFE64EC8C4568672BD2AAC4F /* Pods-SMDatabase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3336FC32CA77D0DA0BDDE25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9694B977A04A5DF4C412AD /* libPods-SMDatabase.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AC9BD1F1D68083700A04136 /* Build configuration list for PBXNativeTarget "SMDatabase" */;
 			buildPhases = (
+				6BDC85EC0F34E16644A86389 /* [CP] Check Pods Manifest.lock */,
 				3AC9BCEE1D68083700A04136 /* Sources */,
 				3AC9BCEF1D68083700A04136 /* Frameworks */,
 				3AC9BCF01D68083700A04136 /* Resources */,
+				E63445A8384F4BC3019B3A0E /* [CP] Embed Pods Frameworks */,
+				840C6E1E1AA1D1B27E4813FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,12 +321,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BDC85EC0F34E16644A86389 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		840C6E1E1AA1D1B27E4813FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMDatabase/Pods-SMDatabase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E63445A8384F4BC3019B3A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMDatabase/Pods-SMDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AC9BCEE1D68083700A04136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC9BD331D68089700A04136 /* SMDatabase.m in Sources */,
+				3AC9BD341D68089700A04136 /* SMDatabase+Model.m in Sources */,
 				3AC9BCFD1D68083700A04136 /* ViewController.m in Sources */,
+				3AC9BD351D68089700A04136 /* SMModel.m in Sources */,
 				3AC9BCFA1D68083700A04136 /* AppDelegate.m in Sources */,
 				3AC9BCF71D68083700A04136 /* main.m in Sources */,
 			);
@@ -413,6 +520,7 @@
 		};
 		3AC9BD201D68083700A04136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A975A8978061E233A643034F /* Pods-SMDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMDatabase/Info.plist;
@@ -424,6 +532,7 @@
 		};
 		3AC9BD211D68083700A04136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE64EC8C4568672BD2AAC4F /* Pods-SMDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMDatabase/Info.plist;
@@ -498,6 +607,7 @@
 				3AC9BD211D68083700A04136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC9BD221D68083700A04136 /* Build configuration list for PBXNativeTarget "SMDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +616,7 @@
 				3AC9BD241D68083700A04136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC9BD251D68083700A04136 /* Build configuration list for PBXNativeTarget "SMDatabaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +625,7 @@
 				3AC9BD271D68083700A04136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
